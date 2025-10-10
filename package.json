@@ -1,0 +1,47 @@
+{
+  "name": "calcula-curp",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Librería para calcular la CURP (Clave Única de Registro de Población) mexicana con homoclave y dígito verificador",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "microbundle --no-compress",
+    "build:prod": "microbundle",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run test && npm run lint && npm run build:prod"
+  },
+  "keywords": ["curp", "mexico", "clave-unica", "registro-poblacion", "identificacion", "mexican-id"],
+  "author": "Gerardo Lucero",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GerardoLucero/calcula-curp.git"
+  },
+  "bugs": {"url": "https://github.com/GerardoLucero/calcula-curp/issues"},
+  "homepage": "https://github.com/GerardoLucero/calcula-curp#readme",
+  "engines": {"node": ">=18.0.0"},
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
+    "@eslint/js": "^8.57.0",
+    "babel-jest": "^29.7.0",
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "microbundle": "^0.15.1"
+  },
+  "dependencies": {"dayjs": "^1.11.13"},
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": ["src/**/*.{js,ts}", "!src/**/*.test.{js,ts}"],
+    "coverageThreshold": {"global": {"branches": 85, "functions": 90, "lines": 90, "statements": 90}},
+    "transform": {"^.+\\.jsx?$": "babel-jest"}
+  }
+}
