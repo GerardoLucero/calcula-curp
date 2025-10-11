@@ -1,6 +1,6 @@
 {
   "name": "calcula-curp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "Librería para calcular la CURP (Clave Única de Registro de Población) mexicana con homoclave y dígito verificador",
   "main": "dist/index.js",
