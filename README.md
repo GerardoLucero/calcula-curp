@@ -1,6 +1,7 @@
 # 🆔 calcula-curp
 
 [![npm version](https://badge.fury.io/js/calcula-curp.svg)](https://www.npmjs.com/package/calcula-curp)
+[![npm downloads](https://img.shields.io/npm/dm/calcula-curp.svg)](https://www.npmjs.com/package/calcula-curp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 > Librería moderna para calcular la **CURP (Clave Única de Registro de Población)** mexicana con homoclave y dígito verificador, siguiendo el algoritmo oficial del Registro Nacional de Población.
