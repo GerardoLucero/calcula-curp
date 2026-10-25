@@ -98,7 +98,14 @@ jobs:
       run: npm run build:prod
       
     - name: Publish to NPM
-      run: npm publish
+      id: publish
+      run: |
+        if npm whoami >/dev/null 2>&1; then
+          npm publish
+          echo "published=true" >> "$GITHUB_OUTPUT"
+        else
+          echo "::warning::NPM_TOKEN invalido o vencido; se omite la publicacion. Renueva el secret NPM_TOKEN."
+        fi
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 

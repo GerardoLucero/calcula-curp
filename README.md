@@ -2,12 +2,10 @@
 
 Librería moderna para calcular la CURP (Clave Única de Registro de Población) mexicana con homoclave y dígito verificador, siguiendo el algoritmo oficial del Registro Nacional de Población.
 
-[![Ko-fi](https://img.shields.io/badge/Ko--fi-FF5E5B?style=flat&logo=ko-fi&logoColor=white)](https://ko-fi.com/gerardolucero)
-[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=flat&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/lucerorios0)
-[![GitHub Stars](https://img.shields.io/github/stars/GerardoLucero/calcula-curp?style=social)](https://github.com/GerardoLucero/calcula-curp)
 [![npm version](https://badge.fury.io/js/calcula-curp.svg)](https://www.npmjs.com/package/calcula-curp)
 [![npm downloads](https://img.shields.io/npm/dm/calcula-curp.svg)](https://www.npmjs.com/package/calcula-curp)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![CI](https://github.com/GerardoLucero/calcula-curp/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/GerardoLucero/calcula-curp/actions/workflows/ci-cd.yml)
 
 ## Features
 
@@ -135,9 +133,16 @@ Esta librería implementa el algoritmo oficial del RNAPO, pero la CURP definitiv
 **¿Por qué mi CURP difiere de la oficial?**  
 La homoclave (penúltimo caracter) es asignada por RENAPO para evitar duplicados. Esta librería usa `'0'` como homoclave predeterminada.
 
+## Apoyo
+
+Proyecto de código abierto mantenido en mi tiempo libre. Si te fue útil y quieres agradecerlo:
+
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-FF5E5B?style=flat&logo=ko-fi&logoColor=white)](https://ko-fi.com/gerardolucero)
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=flat&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/lucerorios0)
+
 ## Licencia
 
-MIT © [Gerardo Lucero](https://github.com/GerardoLucero)
+MIT © [Gerardo Lucero](https://github.com/GerardoLucero), ver [LICENSE](LICENSE).
 
 ---
 
